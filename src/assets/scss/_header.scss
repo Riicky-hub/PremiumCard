@@ -1,0 +1,44 @@
+.header {
+    height: 100vh;
+    width: 100%;
+    background: rgb(201,231,242);
+    background: linear-gradient(90deg, rgba(201,231,242,1) 0%, rgba(98,186,218,1) 500%);
+    &__nav {
+        padding-top: 40px;
+    }
+}
+.nav {
+    align-items: center;
+    &__title {
+        font-weight: 700;
+        width: 40%;
+    }
+    &__sections {
+        display: flex;
+        width: 60%;
+        margin: 0;
+        padding: 0;
+        justify-content: space-between;
+        &--items {
+            display: flex;
+            align-items: center;
+            li {
+                padding: 0 5px;
+            }
+        }
+        &--login {
+            display: flex;
+            align-items: center;
+            li {
+                padding: 0 8px;
+                button {
+                    padding: 8px 15px;
+                    border: none;
+                    background-color: $colorPurple;
+                    color: $colorWhite;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}
