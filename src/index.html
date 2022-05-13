@@ -12,30 +12,71 @@
     </head>
     <body>
         <header class="header">
-            <div class="container">
+            <div class="header__floatImg--item1">
+                <img src="./assets/img/svg/40.svg">
+            </div>
+            <div class="header__floatImg--item2">
+                <img src="./assets/img/svg/20.svg">
+            </div>
+            <div class="header__floatImg--item3">
+                <img src="./assets/img/svg/50.svg">
+            </div>
+            <div class="container header__navegation">
                 <div class="header__nav">
                     <nav class="nav">
                         <h3 class="nav__title">PremiumCard</h3>
                         <ul class="nav__sections">
                             <div class="nav__sections--items">
-                                <li>Produtos</li>
+                                <li>Serviços</li>
                                 <li>Templates</li>
                                 <li>Blog</li>
                                 <li>Preços</li>
                             </div>
-                            
                             <div class="nav__sections--login">
                                 <li>Entrar</li>
-                                <li><button>Criar conta</button></li>
+                                <li><button type="button">Criar conta</button></li>
                             </div>
                         </ul>
                     </nav>
                 </div>
-                <div class="header__showcase">
-
+            </div>
+            <div class="container header__showcase">
+                <div class="row">
+                    <div class="col-md-6 showcase__text">
+                        <h1>
+                            Administrar seu negócio como freelancer nunca foi tão fácil.
+                        </h1>
+                        <p>Com nossos cartões, você tem seguro viajem logo na primeira transferência. Todas nossas taxas são as mais baixas do mercado</p>
+                        <div class="showcase__buttons">
+                            <button type="button" id="button">Começar</button>
+                            <a href="#" class="seeHowWorks"><button type="button" id="button__video"><i class="fa-solid fa-play"></i></button><p>Veja como funciona</p></a>    
+                        </div>
+                        <div class="showcase__check">
+                            <div class="showcase__check--item">
+                                <button><i class="fa-solid fa-check"></i></button>
+                                <p>Cadastro grátis</p>
+                            </div>
+                            <div class="showcase__check--item">
+                                <button><i class="fa-solid fa-check"></i></button>
+                                <p>Ótimo serviço</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 showcase__imgs">
+                        <div class="showcase__imgs--item1">
+                            <img src="./assets/img/hand1.png">
+                        </div>
+                        <div class="showcase__imgs--item2">
+                            <img src="./assets/img/hand2.png">
+                        </div>
+                        <div class="showcase__imgs--item3">
+                            <img src="./assets/img/svg/30.svg">
+                        </div>
+                    </div>
                 </div>
             </div>
         </header>
+        <script src="https://kit.fontawesome.com/efde86963f.js" crossorigin="anonymous"></script>
         <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     </body>
 </html>

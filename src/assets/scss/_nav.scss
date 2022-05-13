@@ -1,0 +1,35 @@
+.nav {
+    align-items: center;
+    &__title {
+        font-weight: 700;
+        width: 40%;
+    }
+    &__sections {
+        display: flex;
+        width: 60%;
+        margin: 0;
+        padding: 0;
+        justify-content: space-between;
+        &--items {
+            display: flex;
+            align-items: center;
+            li {
+                padding: 0 5px;
+            }
+        }
+        &--login {
+            display: flex;
+            align-items: center;
+            li {
+                padding: 0 8px;
+                button {
+                    @include button($colorPurple, white);
+                    transition: $transition;
+                    &:hover {
+                        background-color: $colorPurpleHover;
+                    }
+                }
+            }
+        }
+    }
+}

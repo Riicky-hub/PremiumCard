@@ -1,0 +1,101 @@
+.row {
+    height: 100%;
+}
+.showcase {
+    &__imgs {
+        position: relative;
+        overflow: hidden;
+        height: 100%;
+        &--item1 {
+            position: absolute;
+            top: 90px;
+            z-index: 3;
+        }
+        &--item2 {
+            position: absolute;
+            top: 37px;
+            z-index: 5;
+            img {
+                width: 222px;
+            }
+        }
+        &--item3 {
+            position: absolute;
+            left: 200px;
+            bottom: 115px;
+            z-index: 4;
+        }
+    }
+    &__check {
+        display: flex;
+        padding-top: 65px;
+        &--item {
+            display: flex;
+            align-items: center;
+            button {
+                @include button($colorPurple, white);
+                border-radius: 100%;
+                cursor: default;
+                padding: 1px 5px;
+            }
+            p {
+                margin: 0 10px;
+            }
+        }
+    }
+    &__buttons {
+        padding-top: 10px;
+        display: flex;
+        align-items: center;
+        #button {
+            @include button($colorPurple, white);
+            border-radius: 25px;
+            padding: 15px 35px;
+            transition: $transition;
+            &:hover {
+                background-color: $colorPurpleHover;
+            }
+
+        }
+        .seeHowWorks {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            text-decoration: none;
+            margin-left: 50px;
+            p {
+                margin: 0 10px;
+                transition:$transition;
+                &:hover {
+                    color: black
+                }
+            }
+            #button__video {
+                @include button(#22D497, white);
+                border-radius: 100%;
+                padding: 13px 19px;
+                text-align: center;
+                transition: $transition;
+                &:hover {
+                    background-color: #1db37e;
+                }
+            }
+        }
+    }
+    &__text {
+        z-index: 5;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        h1 {
+            font-weight: 700;
+            padding: 0 0 15px 0;
+            max-width: 90%;
+            color: black;
+        }
+        p {
+            color: $colorPurpleAlt;
+            max-width: 80%;
+        }
+    }
+}

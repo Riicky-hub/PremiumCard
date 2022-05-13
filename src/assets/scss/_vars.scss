@@ -1,2 +1,15 @@
+// Vars
 $colorPurple: #4F46BA;
+$colorPurpleHover: #463ea1;
+$colorPurpleAlt: rgba(100, 96, 125, 1);
 $colorWhite: #f3f3f3;
+$transition: all 0.5s ease-in-out;
+// Mixins
+@mixin button($color, $colorFont) {
+    padding: 10px 20px;
+    border: none;
+    background-color: $color;
+    color: $colorFont;
+    font-weight: 700;
+    font-size: 0.9rem;
+}
