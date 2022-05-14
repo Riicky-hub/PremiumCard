@@ -192,4 +192,29 @@ body {
   max-width: 80%;
 }
 
+.companies {
+  height: 200px;
+  width: 100%;
+  background-color: #fefefe;
+}
+.companies__title {
+  text-align: center;
+  padding: 35px 0;
+}
+
+.slider__track {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(966px);
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

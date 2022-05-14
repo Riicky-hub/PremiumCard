@@ -1,0 +1,24 @@
+.companies {
+    height: 200px;
+    width: 100%;
+    background-color: $colorWhite;
+    &__title {
+        text-align: center;
+        padding: 35px 0;
+    }
+}
+.slider {
+    &__track {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX((calc(138px * 7)));
+    }
+}
