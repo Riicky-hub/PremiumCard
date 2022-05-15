@@ -2,7 +2,10 @@
 $colorPurple: #4F46BA;
 $colorPurpleHover: #463ea1;
 $colorPurpleAlt: rgba(100, 96, 125, 1);
-$colorWhite: #F5F6F8;
+
+$grayBg: #F5F6F8;
+$whiteBg: #FAFBFF;
+
 $transition: all 0.5s ease-in-out;
 // Mixins
 @mixin button($color, $colorFont) {
@@ -19,10 +22,21 @@ $transition: all 0.5s ease-in-out;
     color: black;
 }
 @mixin blockquote($porcentagemW) {
-    background-color: $colorWhite;
+    background-color: $grayBg;
     width: $porcentagemW;
     border-radius: 20px;
     position: relative;
     display: flex;
     justify-content: space-around;
+}
+@mixin checked($bgcolor, $w, $h) {
+    background-color: $bgcolor;
+    color: white;
+    width: $w;
+    height: $h;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
 }

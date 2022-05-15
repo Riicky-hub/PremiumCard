@@ -32,14 +32,12 @@
         &--item {
             display: flex;
             align-items: center;
-            button {
-                @include button($colorPurple, white);
-                border-radius: 100%;
-                cursor: default;
-                padding: 1px 5px;
+            i {
+                @include checked($colorPurple, 23px, 23px);
             }
             p {
                 margin: 0 10px;
+                cursor: default;
             }
         }
     }

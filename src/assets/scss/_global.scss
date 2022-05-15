@@ -19,16 +19,8 @@ blockquote {
     }
 }
 .blockquote--icon {
+    @include checked(black, 45px, 45px);
     position: absolute;
-    background-color: black;
-    text-align: center;
-    height: 45px;
-    width: 45px;
-    border-radius: 50%;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     font-size: 1.3rem;
     top: -15px;
     left: 30px;

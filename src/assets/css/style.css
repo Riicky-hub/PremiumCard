@@ -21,16 +21,16 @@ blockquote p span {
 }
 
 .blockquote--icon {
-  position: absolute;
   background-color: black;
-  text-align: center;
-  height: 45px;
-  width: 45px;
-  border-radius: 50%;
   color: white;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  font-size: 0.8rem;
+  position: absolute;
   font-size: 1.3rem;
   top: -15px;
   left: 30px;
@@ -146,19 +146,20 @@ blockquote p span {
   display: flex;
   align-items: center;
 }
-.showcase__check--item button {
-  padding: 10px 20px;
-  border: none;
+.showcase__check--item i {
   background-color: #4F46BA;
   color: white;
-  font-weight: 700;
-  font-size: 0.9rem;
-  border-radius: 100%;
-  cursor: default;
-  padding: 1px 5px;
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8rem;
 }
 .showcase__check--item p {
   margin: 0 10px;
+  cursor: default;
 }
 .showcase__buttons {
   padding-top: 10px;
@@ -253,7 +254,7 @@ blockquote p span {
   }
 }
 .beneficios {
-  background-color: white;
+  background-color: #FAFBFF;
   padding: 30px 0;
 }
 .beneficios__texts {
@@ -276,6 +277,37 @@ blockquote p span {
   position: relative;
   display: flex;
   justify-content: space-around;
+}
+
+.beneficios__cards {
+  grid-gap: 30px;
+  margin: 40px 0;
+}
+.beneficios__card {
+  height: 400px;
+  border-radius: 10px;
+  background-color: white;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+}
+.beneficios__card h3 {
+  padding: 10px 0 10px 5px;
+  margin: 0;
+  text-align: start;
+}
+.beneficios__card--text {
+  width: 85%;
+  text-align: center;
+  margin: auto;
+}
+.beneficios__card--text img {
+  margin: 32px 0;
+}
+.beneficios__card--text h2 {
+  font-weight: 700;
+  font-size: 2.6rem;
+  color: black;
+  font-size: 2.1rem;
+  margin-bottom: 32px;
 }
 
 /*# sourceMappingURL=style.css.map */
