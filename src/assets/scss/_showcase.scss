@@ -88,10 +88,9 @@
         flex-direction: column;
         justify-content: center;
         h1 {
-            font-weight: 700;
+            @include title;
+            width: 90%;
             padding: 0 0 15px 0;
-            max-width: 90%;
-            color: black;
         }
         p {
             color: $colorPurpleAlt;

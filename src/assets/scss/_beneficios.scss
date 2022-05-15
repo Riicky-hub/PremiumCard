@@ -1,0 +1,23 @@
+.beneficios {
+    background-color: white;
+    padding: 30px 0;
+    &__texts {
+        justify-content: space-between;
+        &--text {
+            text-align: left;
+            width: 40%;
+            h3 {
+                @include title;
+                padding: 10px 0;
+            }
+        }
+        &--blockquote {
+            background-color: $colorWhite;
+            width: 35%;
+            border-radius: 20px;
+            position: relative;
+            display: flex;
+            justify-content: space-around;
+        }
+    }
+}
