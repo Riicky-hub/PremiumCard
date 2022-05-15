@@ -1,0 +1,68 @@
+.whyUs {
+    background-color: $whiteBg;
+    padding-bottom: 50px;
+    &__img {
+        display: flex;
+        position: relative;
+        &--item {
+            z-index: 1;
+        }
+        &--1 {
+            position: absolute;
+            top: 145px;
+            left: 65px;
+            z-index: 2;
+        }
+        &--2 {
+            position: absolute;
+            top: 260px;
+            left: 35px;
+            z-index: 2;
+        }
+        &--3 {
+            position: absolute;
+            top: 370px;
+            z-index: 2;
+        }
+        &--4 {
+            position: absolute;
+            top: 32px;
+            right: 70px;
+            z-index: 2;
+        }
+        &--svg {
+            position: absolute;
+            top: 35px;
+            right: 90px;
+            z-index: 3;
+        }
+    }
+    &__why {
+        color: #3734A9;
+        font-size: 1.3rem;
+        margin: 10px 0 0 0;
+    }
+    &__title {
+        @include title;
+        margin: 15px 0 20px 0;
+    }
+    &__text {
+        color: $colorPurpleAlt;
+        margin-bottom: 20px;
+    }
+    &__check {
+        padding: 20px 0;
+        border-top: 2px solid rgba(0, 0, 0, 0.1);
+        &--item {
+            display: flex;
+            padding: 5px 0;
+            i {
+                @include checked(#FDBC64, 23px, 23px);
+            }
+            p {
+                margin: 0 10px;
+                cursor: default;
+            }
+        }
+    }
+}

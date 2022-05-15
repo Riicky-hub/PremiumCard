@@ -1,8 +1,9 @@
 .beneficios {
     background-color: $whiteBg;
-    padding: 30px 0;
+    padding: 50px 0;
     &__texts {
         justify-content: space-between;
+        margin-bottom: 50px;
         &--text {
             text-align: left;
             width: 40%;
