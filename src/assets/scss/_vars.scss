@@ -18,3 +18,11 @@ $transition: all 0.5s ease-in-out;
     font-size: 2.6rem;
     color: black;
 }
+@mixin blockquote($porcentagemW) {
+    background-color: $colorWhite;
+    width: $porcentagemW;
+    border-radius: 20px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+}

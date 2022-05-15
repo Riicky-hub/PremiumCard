@@ -12,12 +12,7 @@
             }
         }
         &--blockquote {
-            background-color: $colorWhite;
-            width: 35%;
-            border-radius: 20px;
-            position: relative;
-            display: flex;
-            justify-content: space-around;
+            @include blockquote(35%);
         }
     }
 }
