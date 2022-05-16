@@ -1,6 +1,19 @@
 .beneficios {
     background-color: $whiteBg;
     padding: 50px 0;
+    position: relative;
+    &__floatImg {
+        &--item1 {
+            position: absolute;
+            bottom: -75px;
+            right: 0;
+        }
+        &--item2 {
+            position: absolute;
+            top: 155px;
+            left: 0;
+        }
+    }
     &__texts {
         justify-content: space-between;
         margin-bottom: 50px;

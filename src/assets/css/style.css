@@ -257,6 +257,17 @@ blockquote p span {
 .beneficios {
   background-color: #FAFBFF;
   padding: 50px 0;
+  position: relative;
+}
+.beneficios__floatImg--item1 {
+  position: absolute;
+  bottom: -75px;
+  right: 0;
+}
+.beneficios__floatImg--item2 {
+  position: absolute;
+  top: 155px;
+  left: 0;
 }
 .beneficios__texts {
   justify-content: space-between;
@@ -284,6 +295,7 @@ blockquote p span {
 .beneficios__cards {
   grid-gap: 30px;
   margin: 40px 0;
+  position: relative;
 }
 .beneficios__card {
   height: 400px;
