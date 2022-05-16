@@ -1,0 +1,43 @@
+.statistics {
+    background-color: #3734A9;
+    color: white;
+    height: 200px;
+    position: relative;
+    margin-bottom: 50px;
+    img {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    &__text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-right: 3px solid rgba(0,0,0,0.3);
+        p {
+            letter-spacing: 1px;
+            font-size: 1.1rem;
+            margin: 0;
+        }
+    }
+    &__numbers {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        &--num {
+            h3 {
+                @include title;
+                color: white;
+                font-size: 3.6rem;
+                margin: 8px 0;
+            }
+            p {
+                margin: 0;
+                i {
+                    padding: 0 7px;
+                    color: #B1CA16;
+                }
+            }
+        }
+    }
+}

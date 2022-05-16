@@ -188,11 +188,12 @@ blockquote p span {
   margin-left: 50px;
 }
 .showcase__buttons .seeHowWorks p {
+  color: #4F46BA;
   margin: 0 10px;
   transition: all 0.5s ease-in-out;
 }
 .showcase__buttons .seeHowWorks p:hover {
-  color: black;
+  color: #463ea1;
 }
 .showcase__buttons .seeHowWorks #button__video {
   padding: 10px 20px;
@@ -388,6 +389,50 @@ blockquote p span {
 .whyUs__check--item p {
   margin: 0 10px;
   cursor: default;
+}
+
+.statistics {
+  background-color: #3734A9;
+  color: white;
+  height: 200px;
+  position: relative;
+  margin-bottom: 50px;
+}
+.statistics img {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.statistics__text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 3px solid rgba(0, 0, 0, 0.3);
+}
+.statistics__text p {
+  letter-spacing: 1px;
+  font-size: 1.1rem;
+  margin: 0;
+}
+.statistics__numbers {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.statistics__numbers--num h3 {
+  font-weight: 700;
+  font-size: 2.6rem;
+  color: black;
+  color: white;
+  font-size: 3.6rem;
+  margin: 8px 0;
+}
+.statistics__numbers--num p {
+  margin: 0;
+}
+.statistics__numbers--num p i {
+  padding: 0 7px;
+  color: #B1CA16;
 }
 
 /*# sourceMappingURL=style.css.map */
