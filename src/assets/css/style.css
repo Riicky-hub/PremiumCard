@@ -447,4 +447,57 @@ blockquote p span {
   color: #B1CA16;
 }
 
+.questions {
+  margin-bottom: 50px;
+}
+.questions h3 {
+  font-weight: 700;
+  font-size: 2.6rem;
+  color: black;
+}
+.questions__cards--card {
+  display: flex;
+  justify-content: center;
+}
+.questions__cards--card .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 80%;
+  height: 400px;
+  padding: 25px 25px;
+}
+.questions__cards--card .card img {
+  height: 60px;
+  margin: 25px 0 0 0;
+}
+.questions__cards--card .card button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #FF7F5C;
+  color: white;
+  font-weight: 700;
+  font-size: 0.9rem;
+  height: 53px;
+  transition: all 0.5s ease-in-out;
+}
+.questions__cards--card .card button:hover {
+  background-color: #db6646;
+}
+.questions__cards--card .card h4 {
+  color: black;
+  margin: 5px 0;
+  text-align: center;
+}
+.questions__cards--card .card p {
+  margin: 0;
+  text-align: center;
+}
+.questions__accordion {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
 /*# sourceMappingURL=style.css.map */

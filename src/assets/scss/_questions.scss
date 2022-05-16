@@ -1,0 +1,47 @@
+.questions {
+    margin-bottom: 50px;
+    h3 {
+        @include title;
+    }
+    &__cards {
+        &--card {
+            display: flex;
+            justify-content: center;
+            .card {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                width: 80%;
+                height: 400px;
+                padding: 25px 25px;
+                img {
+                    height: 60px;
+                    margin: 25px 0 0 0;
+                }
+                button {
+                    @include button(#FF7F5C, white);
+                    height: 53px;
+                    transition: $transition;
+                    &:hover {
+                        background-color: #db6646;
+                    }
+                }
+                h4 {
+                    color: black;
+                    margin: 5px 0;
+                    text-align: center;
+                }
+                p {
+                    margin: 0;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    &__accordion {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+}
