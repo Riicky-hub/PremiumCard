@@ -1,0 +1,73 @@
+.footer {
+    &__info {
+        h3 {
+            @include title;
+            font-size: 1.8rem;
+            padding-bottom: 10px;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+            transition: $transition;
+        }
+        &--social {
+            p {
+                color: $colorPurpleAlt;
+                margin: 0 15px 20px 0;
+            }
+            ul {
+                padding: 0;
+                display: flex;
+                li {
+                    padding-right: 25px;
+                    text-align: start;
+                    a {
+                        font-size: 1.9rem;
+                        color: $colorPurple;
+                        &:hover {
+                            color: $colorPurpleHover;
+                        }
+                    }
+                }
+            }
+        }
+        &--company, &--font {
+            div {
+                p {
+                    margin: 0 0 15px 0;
+                    font-size: 1.1rem;
+                    a:hover {
+                        color: rgb(50, 50, 50);
+                    }
+                }
+            }
+        }
+        &--news {
+            form {
+                display: flex;
+                align-items: center;
+                input {
+                    padding: 9px 5px;
+                    border: 1px solid rgba(0, 0, 0, 0.27);
+                }
+                button {
+                    font-size: 0.8rem;
+                    padding: 10px 20px;
+                    @include button($colorPurple, white);
+                }
+            }
+            p {
+                color: $colorPurpleAlt;
+                margin: 15px 0;
+            }
+        }
+    }
+    &__copy {
+        margin: 30px 0;
+        text-align: center;
+        border-top: 3px solid rgba(0, 0, 0, 0.27);
+        h5 {
+            margin-top: 30px;
+        }
+    }
+}

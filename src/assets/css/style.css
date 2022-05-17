@@ -499,5 +499,81 @@ blockquote p span {
   flex-direction: column;
   justify-content: space-evenly;
 }
+.questions__accordion--item {
+  border: 0;
+}
+.questions__accordion--item #help__btn button {
+  border: 2px solid rgba(0, 0, 0, 0.229);
+  border-radius: 5px;
+}
+
+.footer__info h3 {
+  font-weight: 700;
+  font-size: 2.6rem;
+  color: black;
+  font-size: 1.8rem;
+  padding-bottom: 10px;
+}
+.footer__info a {
+  text-decoration: none;
+  color: black;
+  transition: all 0.5s ease-in-out;
+}
+.footer__info--social p {
+  color: #64607d;
+  margin: 0 15px 20px 0;
+}
+.footer__info--social ul {
+  padding: 0;
+  display: flex;
+}
+.footer__info--social ul li {
+  padding-right: 25px;
+  text-align: start;
+}
+.footer__info--social ul li a {
+  font-size: 1.9rem;
+  color: #4F46BA;
+}
+.footer__info--social ul li a:hover {
+  color: #463ea1;
+}
+.footer__info--company div p, .footer__info--font div p {
+  margin: 0 0 15px 0;
+  font-size: 1.1rem;
+}
+.footer__info--company div p a:hover, .footer__info--font div p a:hover {
+  color: #323232;
+}
+.footer__info--news form {
+  display: flex;
+  align-items: center;
+}
+.footer__info--news form input {
+  padding: 9px 5px;
+  border: 1px solid rgba(0, 0, 0, 0.27);
+}
+.footer__info--news form button {
+  font-size: 0.8rem;
+  padding: 10px 20px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #4F46BA;
+  color: white;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+.footer__info--news p {
+  color: #64607d;
+  margin: 15px 0;
+}
+.footer__copy {
+  margin: 30px 0;
+  text-align: center;
+  border-top: 3px solid rgba(0, 0, 0, 0.27);
+}
+.footer__copy h5 {
+  margin-top: 30px;
+}
 
 /*# sourceMappingURL=style.css.map */

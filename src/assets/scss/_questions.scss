@@ -43,5 +43,14 @@
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
+        &--item {
+            border: 0;
+            #help__btn {
+                button {
+                    border: 2px solid rgba(0, 0, 0, 0.229);
+                    border-radius: 5px;
+                }
+            }
+        }
     }
 }
