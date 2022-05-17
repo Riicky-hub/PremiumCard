@@ -20,3 +20,10 @@ _Ilustrações e ícones vem do Icons8 - [Icons8](https://icons8.com/)_
 ```
 npm install
 ```
+
+## Main Goals
+
+_Criar base do site -_ _**Finished**_ 
+_Outros detalhes -_ _**Working**_ 
+_Animações -_ _**Working**_ 
+_Responsive -_ _**Working**_ 
