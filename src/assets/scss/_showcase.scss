@@ -61,13 +61,18 @@
             text-align: center;
             text-decoration: none;
             margin-left: 50px;
+            &:hover {
+                p {
+                    color: $colorPurpleHover;
+                }
+                #button__video {
+                    background-color: #1db37e;
+                }
+            }
             p {
                 color: $colorPurple;
                 margin: 0 10px;
-                transition:$transition;
-                &:hover {
-                    color: $colorPurpleHover;
-                }
+                transition: $transition;
             }
             #button__video {
                 @include button(#22D497, white);
@@ -75,9 +80,6 @@
                 padding: 13px 19px;
                 text-align: center;
                 transition: $transition;
-                &:hover {
-                    background-color: #1db37e;
-                }
             }
         }
     }

@@ -89,6 +89,15 @@ blockquote p span {
 }
 .nav__sections--items li {
   padding: 0 5px;
+  font-size: 1.1rem;
+}
+.nav__sections--items li a {
+  text-decoration: none;
+  color: black;
+  transition: all 0.5s ease-in-out;
+}
+.nav__sections--items li a:hover {
+  color: #323232;
 }
 .nav__sections--login {
   display: flex;
@@ -96,6 +105,15 @@ blockquote p span {
 }
 .nav__sections--login li {
   padding: 0 8px;
+  font-size: 1.1rem;
+}
+.nav__sections--login li a {
+  text-decoration: none;
+  color: black;
+  transition: all 0.5s ease-in-out;
+}
+.nav__sections--login li a:hover {
+  color: #323232;
 }
 .nav__sections--login li button {
   padding: 10px 20px;
@@ -187,13 +205,16 @@ blockquote p span {
   text-decoration: none;
   margin-left: 50px;
 }
+.showcase__buttons .seeHowWorks:hover p {
+  color: #463ea1;
+}
+.showcase__buttons .seeHowWorks:hover #button__video {
+  background-color: #1db37e;
+}
 .showcase__buttons .seeHowWorks p {
   color: #4F46BA;
   margin: 0 10px;
   transition: all 0.5s ease-in-out;
-}
-.showcase__buttons .seeHowWorks p:hover {
-  color: #463ea1;
 }
 .showcase__buttons .seeHowWorks #button__video {
   padding: 10px 20px;
@@ -206,9 +227,6 @@ blockquote p span {
   padding: 13px 19px;
   text-align: center;
   transition: all 0.5s ease-in-out;
-}
-.showcase__buttons .seeHowWorks #button__video:hover {
-  background-color: #1db37e;
 }
 .showcase__text {
   z-index: 5;

@@ -1,13 +1,14 @@
 {
   "name": "PremiumCard",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.1",
+  "description": "Site de cartão de crédito e débito",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "webp": "webpack -w",
+    "sass": "sass ./src/assets/scss/style.scss ./src/assets/css/style.css --watch"
   },
   "keywords": [],
-  "author": "",
+  "author": "Riicky_hub",
   "license": "ISC",
   "dependencies": {
     "bootstrap": "^5.1.3"
