@@ -17,6 +17,7 @@ _Ilustrações e ícones vem do Icons8 - [Icons8](https://icons8.com/)_
 | Nodemon | Express |
 | ----- | Mongoose |
 | ----- | regenerator-runtime |
+| ----- | core-js |
 
 Engine Express: ejs
 
