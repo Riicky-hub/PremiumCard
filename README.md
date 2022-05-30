@@ -15,8 +15,8 @@ _Ilustrações e ícones vem do Icons8 - [Icons8](https://icons8.com/)_
 | Webpack | Bootstrap |
 | Babel | FontAwesome |
 | Nodemon | Express |
-| ----- | Mongoose |
-| ----- | helmet |
+| css-loader | Mongoose |
+| style-loader | helmet |
 | ----- | csurf |
 
 Template Engine: ejs;
