@@ -15,11 +15,9 @@ _Ilustrações e ícones vem do Icons8 - [Icons8](https://icons8.com/)_
 | Webpack | Bootstrap |
 | Babel | FontAwesome |
 | Nodemon | Express |
-| ----- | Mongoose |
-| ----- | regenerator-runtime |
-| ----- | core-js |
-
-Engine Express: ejs
+| ejs | Mongoose |
+| helmet | regenerator-runtime |
+| csurf | core-js |
 
 ### Instalação
 
