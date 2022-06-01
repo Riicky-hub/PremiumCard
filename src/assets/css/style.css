@@ -259,17 +259,18 @@ blockquote p span {
 }
 
 .slider__track {
+  position: absolute;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
 @keyframes scroll {
-  0% {
-    transform: translateX(0);
+  from {
+    right: -33px;
   }
-  100% {
-    transform: translateX(966px);
+  to {
+    right: 100%;
   }
 }
 .beneficios {
@@ -373,7 +374,7 @@ blockquote p span {
 .whyUs__img--4 {
   position: absolute;
   top: 32px;
-  right: 70px;
+  left: 10px;
   z-index: 2;
 }
 .whyUs__img--svg {
@@ -421,6 +422,34 @@ blockquote p span {
   cursor: default;
 }
 
+@media only screen and (max-width: 991px) {
+  .whyUs .img__div {
+    display: flex;
+    align-items: center;
+  }
+  .whyUs__img {
+    align-items: center;
+  }
+  .whyUs__img--1 {
+    top: 100px;
+    left: 50px;
+  }
+  .whyUs__img--2 {
+    top: 160px;
+    left: 35px;
+  }
+  .whyUs__img--3 {
+    top: 225px;
+  }
+  .whyUs__img--4 {
+    left: 0;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .whyUs .img__div {
+    display: none;
+  }
+}
 .statistics {
   background-color: #3734A9;
   color: white;
@@ -465,6 +494,63 @@ blockquote p span {
   color: #B1CA16;
 }
 
+@media only screen and (max-width: 767px) {
+  .statistics {
+    z-index: -2;
+  }
+  .statistics img {
+    z-index: -1;
+  }
+  .statistics__text {
+    display: none;
+  }
+  .statistics__numbers {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .statistics__numbers--num h3 {
+    font-size: 3rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .statistics {
+    z-index: -2;
+  }
+  .statistics img {
+    z-index: -1;
+  }
+  .statistics .container {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  .statistics .container .row {
+    width: 100vw;
+    margin: 0;
+  }
+  .statistics__numbers {
+    justify-content: space-evenly;
+  }
+  .statistics__numbers--num h3 {
+    font-size: 2.5rem;
+  }
+}
+@media only screen and (max-width: 499px) {
+  .statistics {
+    height: 170px;
+  }
+  .statistics__numbers {
+    text-align: center;
+  }
+  .statistics__numbers--num {
+    padding: 0 15px;
+  }
+  .statistics__numbers--num h3 {
+    font-size: 2rem;
+  }
+}
 .questions {
   margin-bottom: 50px;
 }
@@ -525,6 +611,23 @@ blockquote p span {
   border-radius: 5px;
 }
 
+@media only screen and (max-width: 1199px) {
+  .questions h3 {
+    margin-bottom: 30px;
+  }
+  .questions__cards--card {
+    display: none;
+  }
+  .questions__accordion--item {
+    margin: 7px 0;
+  }
+}
+@media only screen and (max-width: 465px) {
+  .questions h3 {
+    font-size: 2.1rem;
+    text-align: center;
+  }
+}
 .footer__info h3 {
   font-weight: 700;
   font-size: 2.6rem;
@@ -536,6 +639,9 @@ blockquote p span {
   text-decoration: none;
   color: black;
   transition: all 0.5s ease-in-out;
+}
+.footer__info--social {
+  padding-bottom: 10px;
 }
 .footer__info--social p {
   color: #64607d;
@@ -555,6 +661,9 @@ blockquote p span {
 }
 .footer__info--social ul li a:hover {
   color: #463ea1;
+}
+.footer__info--company, .footer__info--font {
+  padding-bottom: 10px;
 }
 .footer__info--company div p, .footer__info--font div p {
   margin: 0 0 15px 0;
