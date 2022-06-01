@@ -54,3 +54,28 @@
         }
     }
 }
+@media only screen and (max-width: 1199px) {
+    .questions {
+        h3 {
+            margin-bottom: 30px;
+        }
+        &__cards {
+            &--card {
+                display: none;
+            }
+        }
+        &__accordion {
+            &--item {
+                margin: 7px 0;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 465px) {
+    .questions {
+        h3 {
+            font-size: 2.1rem;
+            text-align: center;
+        }
+    }
+}

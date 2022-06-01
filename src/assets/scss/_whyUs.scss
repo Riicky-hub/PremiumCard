@@ -27,7 +27,7 @@
         &--4 {
             position: absolute;
             top: 32px;
-            right: 70px;
+            left: 10px;
             z-index: 2;
         }
         &--svg {
@@ -63,6 +63,41 @@
                 margin: 0 10px;
                 cursor: default;
             }
+        }
+    }
+}
+@media only screen and (max-width: 991px) {
+    .whyUs {
+        .img__div {
+            display: flex;
+            align-items: center;
+        }
+        &__img {
+            align-items: center;
+            &--item {
+                
+            }
+            &--1 {
+                top: 100px;
+                left: 50px;
+            }
+            &--2 {
+                top: 160px;
+                left: 35px;
+            }
+            &--3 {
+                top: 225px;   
+            }
+            &--4 {
+                left: 0;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 767px) {
+    .whyUs {
+        .img__div {
+            display: none;
         }
     }
 }

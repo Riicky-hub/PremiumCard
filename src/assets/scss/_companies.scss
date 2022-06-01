@@ -10,17 +10,20 @@
     }
 }
 .slider {
+    // position: relative;
     &__track {
+        position: absolute;
         display: flex;
         align-items: center;
         justify-content: space-between;
+        // animation: scroll 25s infinite linear;
     }
 }
 @keyframes scroll {
-    0% {
-        transform: translateX(0);
+    from {
+        right: -33px;
     }
-    100% {
-        transform: translateX((calc(138px * 7)));
+    to {
+        right: 100%;
     }
 }

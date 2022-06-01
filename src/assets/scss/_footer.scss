@@ -11,6 +11,7 @@
             transition: $transition;
         }
         &--social {
+            padding-bottom: 10px;
             p {
                 color: $colorPurpleAlt;
                 margin: 0 15px 20px 0;
@@ -32,6 +33,7 @@
             }
         }
         &--company, &--font {
+            padding-bottom: 10px;
             div {
                 p {
                     margin: 0 0 15px 0;
