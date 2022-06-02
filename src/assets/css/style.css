@@ -38,17 +38,10 @@ blockquote p span {
 
 .header {
   position: relative;
-  height: 100vh;
-  width: 100%;
+  height: 800px;
   background: #c9e7f2;
   background: linear-gradient(90deg, #c9e7f2 0%, #62bada 500%);
   overflow: hidden;
-}
-.header__navegation {
-  height: 10%;
-}
-.header__nav {
-  padding-top: 30px;
 }
 .header__showcase {
   height: 90%;
@@ -69,65 +62,55 @@ blockquote p span {
   right: 0;
 }
 
-.nav {
-  align-items: center;
+@media only screen and (max-width: 767px) {
+  .header {
+    height: 570px;
+  }
 }
-.nav__title {
-  font-weight: 700;
-  width: 40%;
+.nav-link {
+  color: rgba(0, 0, 0, 0.8) !important;
 }
-.nav__sections {
-  display: flex;
-  width: 60%;
-  margin: 0;
-  padding: 0;
-  justify-content: space-between;
-}
-.nav__sections--items {
-  display: flex;
-  align-items: center;
-}
-.nav__sections--items li {
-  padding: 0 5px;
-  font-size: 1.1rem;
-}
-.nav__sections--items li a {
-  text-decoration: none;
-  color: black;
-  transition: all 0.5s ease-in-out;
-}
-.nav__sections--items li a:hover {
-  color: #323232;
-}
-.nav__sections--login {
-  display: flex;
-  align-items: center;
-}
-.nav__sections--login li {
-  padding: 0 8px;
-  font-size: 1.1rem;
-}
-.nav__sections--login li a {
-  text-decoration: none;
-  color: black;
-  transition: all 0.5s ease-in-out;
-}
-.nav__sections--login li a:hover {
-  color: #323232;
-}
-.nav__sections--login li button {
-  padding: 10px 20px;
-  border: none;
-  background-color: #4F46BA;
-  color: white;
-  font-weight: 700;
-  font-size: 0.9rem;
-  transition: all 0.5s ease-in-out;
-}
-.nav__sections--login li button:hover {
-  background-color: #463ea1;
+.nav-link:hover {
+  color: black !important;
 }
 
+.navbar__nav {
+  padding: 10px 0 15px 0;
+}
+
+.navbar__title {
+  font-size: 1.5rem;
+}
+
+#navbar__login--regis {
+  background: #4F46BA;
+  border: none;
+  color: white !important;
+  padding: 7px 15px;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+#navbar__login--regis i {
+  margin-left: 5px;
+}
+
+.navbar__div {
+  padding: 10px 35px 0 35px;
+}
+
+.navbar__content {
+  justify-content: end;
+}
+
+@media only screen and (max-width: 991px) {
+  .navbar__login--mobile {
+    display: contents !important;
+  }
+
+  .navbar__login {
+    display: none;
+  }
+}
 .row {
   height: 100%;
 }
@@ -241,11 +224,55 @@ blockquote p span {
   width: 90%;
   padding: 0 0 15px 0;
 }
+.showcase__text h1 span {
+  color: #4F46BA;
+}
 .showcase__text p {
   color: #64607d;
   max-width: 80%;
 }
 
+@media only screen and (max-width: 991px) {
+  .showcase__imgs--item1 {
+    display: none;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .showcase__imgs {
+    display: none;
+  }
+
+  .showcase__check {
+    padding: 35px 0 0 0;
+  }
+
+  .showcase__text {
+    justify-content: flex-start;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .showcase__buttons {
+    justify-content: center;
+  }
+  .showcase__text {
+    text-align: center;
+    margin: 5% 0 0 0;
+  }
+  .showcase__text h1 {
+    width: 100%;
+  }
+  .showcase__text p {
+    max-width: 100%;
+  }
+  .showcase__check {
+    display: flex;
+    justify-content: center;
+  }
+
+  .header__floatImg--item3 {
+    display: none;
+  }
+}
 .companies {
   height: 190px;
   width: 100%;
@@ -259,20 +286,14 @@ blockquote p span {
 }
 
 .slider__track {
-  position: absolute;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-
-@keyframes scroll {
-  from {
-    right: -33px;
-  }
-  to {
-    right: 100%;
-  }
+.slider__track--item {
+  margin: 0 10px;
 }
+
 .beneficios {
   background-color: #FAFBFF;
   padding: 50px 0;
@@ -311,6 +332,32 @@ blockquote p span {
   justify-content: space-around;
 }
 
+@media only screen and (max-width: 991px) {
+  .beneficios__texts--blockquote {
+    background-color: #F5F6F8;
+    width: 45%;
+    border-radius: 20px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .beneficios__texts--text {
+    z-index: 2;
+    text-align: left;
+    width: 100%;
+  }
+  .beneficios__texts--text h3 {
+    font-size: 170%;
+  }
+  .beneficios__texts--text p {
+    margin: 0;
+  }
+  .beneficios__texts--blockquote {
+    display: none;
+  }
+}
 .beneficios__cards {
   grid-gap: 30px;
   margin: 40px 0;
@@ -323,7 +370,7 @@ blockquote p span {
   border: 2px solid rgba(0, 0, 0, 0.1);
 }
 .beneficios__card h3 {
-  padding: 10px 0 10px 5px;
+  padding: 10px 0 5px 5px;
   margin: 0;
   text-align: start;
 }
@@ -333,16 +380,49 @@ blockquote p span {
   margin: auto;
 }
 .beneficios__card--text img {
-  margin: 32px 0;
+  margin: 15px 0;
 }
 .beneficios__card--text h2 {
   font-weight: 700;
   font-size: 2.6rem;
   color: black;
   font-size: 2.1rem;
-  margin-bottom: 32px;
+  margin-bottom: 20px;
 }
 
+@media only screen and (max-width: 991px) {
+  .beneficios__cards {
+    grid-gap: 16px;
+  }
+  .beneficios__card h3 {
+    font-size: 1rem;
+  }
+  .beneficios__card--text img {
+    height: 40px;
+  }
+  .beneficios__card--text h2 {
+    font-size: 1.7rem;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .beneficios__card:last-child {
+    height: 250px;
+  }
+}
+@media only screen and (max-width: 428px) {
+  .beneficios__card--text h2 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+  }
+  .beneficios__card--text p {
+    font-size: 0.9rem;
+  }
+}
+@media only screen and (max-width: 331px) {
+  .beneficios__card--text h2 {
+    font-size: 1.2rem;
+  }
+}
 .whyUs {
   background-color: #FAFBFF;
   padding-bottom: 50px;
@@ -376,12 +456,6 @@ blockquote p span {
   top: 32px;
   left: 10px;
   z-index: 2;
-}
-.whyUs__img--svg {
-  position: absolute;
-  top: 35px;
-  right: 90px;
-  z-index: 3;
 }
 .whyUs__why {
   color: #3734A9;
@@ -540,9 +614,6 @@ blockquote p span {
 @media only screen and (max-width: 499px) {
   .statistics {
     height: 170px;
-  }
-  .statistics__numbers {
-    text-align: center;
   }
   .statistics__numbers--num {
     padding: 0 15px;

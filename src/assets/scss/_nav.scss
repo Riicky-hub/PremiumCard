@@ -1,53 +1,37 @@
-.nav {
-    align-items: center;
-    &__title {
-        font-weight: 700;
-        width: 40%;
+.nav-link {
+    color: rgba(0, 0, 0, 0.8) !important;
+    &:hover {
+        color: rgb(0, 0, 0) !important;
     }
-    &__sections {
-        display: flex;
-        width: 60%;
-        margin: 0;
-        padding: 0;
-        justify-content: space-between;
-        &--items {
-            display: flex;
-            align-items: center;
-            li {
-                padding: 0 5px;
-                font-size: 1.1rem;
-                a {
-                    text-decoration: none;
-                    color: black;
-                    transition: $transition;
-                    &:hover {
-                        color: rgb(50, 50, 50);
-                    }
-                }
-            }
-        }
-        &--login {
-            display: flex;
-            align-items: center;
-            li {
-                padding: 0 8px;
-                font-size: 1.1rem;
-                a {
-                    text-decoration: none;
-                    color: black;
-                    transition: $transition;
-                    &:hover {
-                        color: rgb(50, 50, 50);
-                    }
-                }
-                button {
-                    @include button($colorPurple, white);
-                    transition: $transition;
-                    &:hover {
-                        background-color: $colorPurpleHover;
-                    }
-                }
-            }
-        }
+}
+.navbar__nav  {
+    padding: 10px 0 15px 0;
+}
+.navbar__title {
+    font-size: 1.5rem;
+}
+#navbar__login--regis {
+    background: $colorPurple;
+    border: none;
+    color: white !important;
+    padding: 7px 15px;
+    border-radius: 5px;
+    margin-left: 10px;
+    i {
+        margin-left: 5px;
+    }
+}
+.navbar__div {
+    padding: 10px 35px 0 35px;
+}
+.navbar__content {
+    justify-content: end;
+}
+@media only screen and (max-width: 991px) {
+    .navbar__login--mobile {
+        display: contents !important;
+    }
+    .navbar__login {
+        display: none;
     }
 }

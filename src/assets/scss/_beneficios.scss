@@ -30,3 +30,32 @@
         }
     }
 }
+@media only screen and (max-width: 991px) {
+    .beneficios {
+        &__texts {
+            &--blockquote {
+                @include blockquote(45%);
+            }
+        }
+    }
+}
+@media only screen and (max-width: 767px) {
+    .beneficios {
+        &__texts {
+            &--text {
+                z-index: 2;
+                text-align: left;
+                width: 100%;
+                h3 {
+                    font-size: 170%;
+                }
+                p {
+                    margin: 0;
+                }
+            }
+            &--blockquote {
+                display: none;
+            }
+        }
+    }
+}
