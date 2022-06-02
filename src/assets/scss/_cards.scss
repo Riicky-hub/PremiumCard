@@ -10,7 +10,7 @@
         background-color: white;
         border: 2px solid rgba(0, 0, 0, 0.1);
         h3 {
-            padding: 10px 0 10px 5px;
+            padding: 10px 0 5px 5px;
             margin: 0;
             text-align: start;
         }
@@ -19,12 +19,67 @@
             text-align: center;
             margin: auto;
             img {
-                margin: 32px 0;
+                margin: 15px 0;
             }
             h2 {
                 @include title;
                 font-size: 2.1rem;
-                margin-bottom: 32px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 991px) {
+    .beneficios {
+        &__cards {
+            grid-gap: 16px;
+        }
+        &__card {
+            h3 {
+                font-size: 1rem;
+            }
+            &--text {
+                img {
+                    height: 40px;
+                }
+                h2 {
+                    font-size: 1.7rem;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 767px) {
+    .beneficios {
+        &__card {
+            &:last-child {
+                height: 250px;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 428px) {
+    .beneficios {
+        &__card {
+            &--text {
+                h2 {
+                    font-size: 1.3rem;
+                    margin-bottom: 10px;
+                }
+                p {
+                    font-size: 0.9rem;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 331px) {
+    .beneficios {
+        &__card {
+            &--text {
+                h2 {
+                    font-size: 1.2rem;
+                }
             }
         }
     }

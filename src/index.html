@@ -25,31 +25,57 @@
       <img src="./assets/img/svg/50.svg">
     </div>
     <!-- navegação -->
-    <div class="container header__navegation">
-      <div class="header__nav">
-        <nav class="nav">
-          <h3 class="nav__title">PremiumCard</h3>
-          <ul class="nav__sections">
-            <div class="nav__sections--items">
-              <li><a href="#">Serviços</a></li>
-              <li><a href="#">Templates</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Preços</a></li>
-            </div>
-            <div class="nav__sections--login">
-              <li><a href="">Entrar</a></li>
-              <li><button type="button">Criar conta</button></li>
-            </div>
+    <nav class="navbar navbar-expand-lg navbar-light navbar__nav">
+      <div class="container-fluid navbar__div">
+        <a class="navbar-brand navbar__title" href="#">PremiumCard</a>
+        <!-- nav-button -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- nav-content -->
+        <div class="collapse navbar-collapse navbar__content" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Serviços</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Templates</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Preços</a>
+            </li>
+            <li class="nav-item dropdown d-none navbar__login--mobile">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Login</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Login</a></li>
+                <li><a class="dropdown-item" href="#">Login como empresa</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Cadastro</a></li>
+              </ul>
+            </li>
           </ul>
-        </nav>
+        </div>
+        <div class="collapse navbar-collapse navbar__content navbar__login" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="navbar__login--regis" href="#">Cadastrar<i class="fa-solid fa-circle-user"></i></a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
+    </nav>
     <!-- showcase principal -->
     <div class="container header__showcase">
       <div class="row">
         <div class="col-md-6 showcase__text">
           <h1>
-            Administrar seu negócio como freelancer nunca foi tão fácil.
+            Administrar seu negócio como <span>freelancer</span> nunca foi tão fácil.
           </h1>
           <p>Com nossos cartões, você tem seguro viajem logo na primeira transferência. Todas nossas taxas são
             as mais baixas do mercado</p>
@@ -140,7 +166,7 @@
         <div class="col-md-6 beneficios__texts--blockquote">
           <blockquote>
             <div class="blockquote--icon"><i class="fa-solid fa-quote-left"></i></div>
-            <p>Melhor serviço nesse mercado de cartões, com certeza recomendo que todos abram uma conta e
+            <p>Melhor serviço desse mercado, com certeza recomendo que todos abram uma conta e
               aproveite todos os benefícios que eles tem á oferecer!</p>
             <p><span>- Mike Taylor, Web Designer</span></p>
           </blockquote>
@@ -188,7 +214,6 @@
             <img src="./assets/img/whyUs/user2.svg" class="whyUs__img--2 img-fluid">
             <img src="./assets/img/whyUs/user3.svg" class="whyUs__img--3 img-fluid">
             <img src="./assets/img/whyUs/user4.svg" class="whyUs__img--4 img-fluid">
-            <!-- <img src="./assets/img/svg/10.svg" class="whyUs__img--svg img-fluid"> -->
           </div>
         </div>
         <div class="col-md-6 text__div">

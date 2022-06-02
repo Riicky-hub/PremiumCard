@@ -10,20 +10,12 @@
     }
 }
 .slider {
-    // position: relative;
     &__track {
-        position: absolute;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        // animation: scroll 25s infinite linear;
-    }
-}
-@keyframes scroll {
-    from {
-        right: -33px;
-    }
-    to {
-        right: 100%;
+        &--item {
+            margin: 0 10px;
+        }
     }
 }

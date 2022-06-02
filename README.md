@@ -31,6 +31,6 @@ npm install
 
 _Criar base do site -_ _**Finished**_  
 _Outros detalhes -_ _**Finished**_  
-_Animações -_ _**Working**_  
-_Responsive -_ _**Working**_  
+_Responsive -_ _**Finished**_  
 _MVC -_ _**Working**_  
+_Animações -_ _**Working**_  

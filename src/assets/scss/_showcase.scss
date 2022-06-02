@@ -92,10 +92,55 @@
             @include title;
             width: 90%;
             padding: 0 0 15px 0;
+            span {
+                color: $colorPurple;
+            }
         }
         p {
             color: $colorPurpleAlt;
             max-width: 80%;
         }
+    }
+}
+@media only screen and (max-width: 991px) {
+    .showcase__imgs {
+        &--item1 {
+            display: none;
+        }
+    }
+}
+@media only screen and (max-width: 767px) {
+    .showcase__imgs {
+        display: none;
+    }
+    .showcase__check {
+        padding: 35px 0 0 0;
+    }
+    .showcase__text {
+        justify-content: flex-start;
+    }
+}
+@media only screen and (max-width: 575px) {
+    .showcase {
+        &__buttons {
+            justify-content: center;
+        }
+        &__text {
+            text-align: center;
+            margin: 5% 0 0 0;
+            h1 {
+                width: 100%;
+            }
+            p {
+                max-width: 100%;
+            }
+        }
+        &__check {
+            display: flex;
+            justify-content: center;
+        }
+    }
+    .header__floatImg--item3 {
+        display: none;
     }
 }
