@@ -19,7 +19,7 @@ _Ilustrações e ícones vem do Icons8 - [Icons8](https://icons8.com/)_
 | style-loader | helmet |
 | ----- | csurf |
 
-Template Engine: _**Pug**_;
+Template Engine: _**ejs**_;
 
 ### Instalação
 
