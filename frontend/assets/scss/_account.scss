@@ -1,0 +1,62 @@
+.account {
+    height: 100vh;
+    overflow: hidden;
+    width: 100%;
+    background: $blackBg;
+    .img-div {
+        overflow: hidden;
+        position: relative;
+        img {
+            position: absolute;
+            right: -10%;
+            height: 100vh;
+            object-fit: fill;
+        }
+    }
+    .info-div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        position: relative;
+        &__home {
+            color: white;
+            font-size: 1.5rem;
+            position: absolute;
+            right: 30px;
+            top: 10px;
+        }
+        &__title {
+            span {
+                color: $colorPurpleHover;
+            }
+        }
+        &__p {
+            text-align: center;
+            span {
+                color: $colorPurpleHover;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 950px) {
+    .account {
+        .img-div {
+            display: none;
+        }
+        .info-div {
+            width: 100%;
+        }
+    }
+}
+@media only screen and (max-width: 480px) {
+    .account {
+        .info-div {
+            width: 100%;
+            .form__login {
+                margin: 0 20px;
+            }
+        }
+    }
+}

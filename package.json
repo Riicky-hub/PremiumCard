@@ -6,7 +6,7 @@
   "scripts": {
     "start": "nodemon server.js",
     "dev": "webpack -w",
-    "sass": "sass ./src/assets/scss/style.scss ./src/assets/css/style.css --watch"
+    "sass": "sass ./frontend/assets/scss/style.scss ./frontend/assets/css/style.css --watch"
   },
   "keywords": [],
   "author": "Riicky_hub",
