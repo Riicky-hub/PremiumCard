@@ -1,0 +1,36 @@
+<%- include('includes/header') %>
+  <div class="account">
+    <div class="row">
+      <div class="col-6 img-div">
+        <img src="./assets/img/girlCard.jpg" alt="Garota com cartão de crédito">
+      </div>
+      <div class="col-6 info-div">
+        <a href="/" class="info-div__home"><i class="fa-solid fa-house"></i></a>
+        <h2 class="info-div__title"><span>Premium</span>Card</h2>
+        <p class="info-div__p">Junte-se aos <span>milhões de investidores</span><br> e faça parte dessa
+          <span>grande comunidade!</span>
+        </p>
+        <form class="form__register" action="/register" method="POST">
+          <div class="mb-3">
+            <label for="form__register--username" class="form-label">Username:</label>
+            <input type="text" class="form-control" id="form__register--username" max="15" min="3" required>
+          </div>
+          <div class="mb-3">
+            <label for="form__register--email" class="form-label">E-mail:</label>
+            <input type="email" class="form-control" id="form__register--email" required>
+          </div>
+          <div class="mb-3">
+            <label for="form__register--password" class="form-label">Senha:</label>
+            <input type="password" class="form-control" id="form__register--password">
+          </div>
+          <div class="mb-3">
+            <label for="form__register--confirm" class="form-label">Confirmar senha:</label>
+            <input type="password" class="form-control" id="form__register--confirm" aria-describedby="senha-disc">
+            <div id="senha-disc" class="form-text">Caso tenha uma conta, <a href="/login">entre</a> e acesse sua conta</div>
+          </div>
+          <button type="submit" class="btn btn-primary">Criar conta</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <%- include('includes/footer') %>
