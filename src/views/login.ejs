@@ -9,6 +9,7 @@
             <h2 class="info-div__title"><span>Premium</span>Card</h2>
             <p class="info-div__p">Junte-se aos <span>milhões de investidores</span><br> e faça parte dessa <span>grande comunidade!</span></p>
             <form class="form__login" action="/login" method="POST">
+                <input type="hidden" name="_csrf" value="<%= csrfToken %>">
                 <div class="mb-3">
                     <label for="form__login--email" class="form-label">E-mail:</label>
                     <input type="email" class="form-control" id="form__login--email" required>
