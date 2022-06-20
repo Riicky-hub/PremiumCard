@@ -827,5 +827,56 @@ blockquote p span {
     margin: 0 20px;
   }
 }
+.header--account {
+  background-color: rgb(201, 231, 242);
+}
+
+.account {
+  background: #FAFBFF;
+}
+.account__painel {
+  border-top: 5px solid #4F46BA;
+}
+.account .current {
+  background-color: #4F46BA;
+  text-align: center;
+  color: white;
+  padding: 15px 0 20px 0;
+}
+.account .current__money {
+  margin-bottom: 10px;
+}
+.account .current__money p {
+  margin: 0;
+}
+.account .current__money h2 {
+  font-weight: 700;
+  margin: 0;
+}
+.account .current__payment table {
+  width: 100%;
+}
+.account .current__payment--text {
+  text-align: left;
+  padding: 7px 0 7px 25px;
+}
+.account .current__payment--num {
+  font-weight: 700;
+  text-align: right;
+  padding: 7px 25px 7px 0;
+}
+.account .current__btn {
+  margin-top: 15px;
+  width: 80%;
+  padding: 3px 0;
+  font-size: 1.2rem;
+  color: #4F46BA;
+  border: none;
+  border-radius: 5px;
+  transition: all 0.5s ease-in-out;
+}
+.account .current__btn:hover {
+  color: rgb(100, 96, 125);
+}
 
 /*# sourceMappingURL=style.css.map */

@@ -11,51 +11,7 @@
       <img src="./assets/img/svg/50.svg">
     </div>
     <!-- navegação -->
-    <nav class="navbar navbar-expand-lg navbar-light navbar__nav">
-      <div class="container-fluid navbar__div">
-        <a class="navbar-brand navbar__title" href="/">PremiumCard</a>
-        <!-- nav-button -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <!-- nav-content -->
-        <div class="collapse navbar-collapse navbar__content" id="navbarSupportedContent">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Serviços</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Templates</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Blog</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Preços</a>
-            </li>
-            <li class="nav-item dropdown d-none navbar__login--mobile">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Login</a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="/login">Login</a></li>
-                <li><a class="dropdown-item" href="/login">Login como empresa</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="/register">Cadastro</a></li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-        <div class="collapse navbar-collapse navbar__content navbar__login" id="navbarSupportedContent">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="/login">Login</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="navbar__login--regis" href="/register">Cadastrar<i class="fa-solid fa-circle-user"></i></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+    <%- include('includes/navbar'); %> 
     <!-- showcase principal -->
     <div class="container header__showcase">
       <div class="row">

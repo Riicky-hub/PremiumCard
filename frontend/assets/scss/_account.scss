@@ -1,61 +1,51 @@
+.header--account {
+    background-color: rgb(201, 231, 242);
+}
 .account {
-    height: 100vh;
-    overflow: hidden;
-    width: 100%;
-    background: $blackBg;
-    .img-div {
-        overflow: hidden;
-        position: relative;
-        img {
-            position: absolute;
-            right: -10%;
-            height: 100vh;
-            object-fit: fill;
-        }
+    background: $whiteBg;
+    &__painel {
+        border-top: 5px solid $colorPurple;
     }
-    .info-div {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+    .current {
+        background-color: $colorPurple;
+        text-align: center;
         color: white;
-        position: relative;
-        &__home {
-            color: white;
-            font-size: 1.5rem;
-            position: absolute;
-            right: 30px;
-            top: 10px;
-        }
-        &__title {
-            span {
-                color: $colorPurpleHover;
+        padding: 15px 0 20px 0;
+        &__money {
+            margin-bottom: 10px;
+            p {
+                margin: 0;
+            }
+            h2 {
+                font-weight: 700;
+                margin: 0;
             }
         }
-        &__p {
-            text-align: center;
-            span {
-                color: $colorPurpleHover;
+        &__payment {
+            table {
+                width: 100%;
+            }
+            &--text {
+                text-align: left;
+                padding: 7px 0 7px 25px;
+            }
+            &--num {
+                font-weight: 700;
+                text-align: right;
+                padding: 7px 25px 7px 0;
             }
         }
-    }
-}
-@media only screen and (max-width: 950px) {
-    .account {
-        .img-div {
-            display: none;
-        }
-        .info-div {
-            width: 100%;
-        }
-    }
-}
-@media only screen and (max-width: 480px) {
-    .account {
-        .info-div {
-            width: 100%;
-            .form__login {
-                margin: 0 20px;
+        &__btn {
+            margin-top: 15px;
+            width: 80%;
+            padding: 3px 0;
+            font-size: 1.2rem;
+            color: $colorPurple;
+            border: none;
+            border-radius: 5px;
+            transition: $transition;
+            &:hover {
+                color: $colorPurpleAlt;
             }
         }
     }
