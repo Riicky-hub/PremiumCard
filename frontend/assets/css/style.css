@@ -837,6 +837,25 @@ blockquote p span {
 .account__painel {
   border-top: 5px solid #4F46BA;
 }
+.account .abas {
+  height: 100%;
+}
+.account .abas__div {
+  box-shadow: 15px 0px 20px 0px rgba(0, 0, 0, 0.25);
+  background-color: rgba(128, 128, 128, 0.741);
+  height: 100%;
+  width: 80%;
+}
+.account .abas__aba {
+  width: 100%;
+  height: 55px;
+  border: none;
+  border-bottom: 2px solid rgba(128, 128, 128, 0.741);
+}
+.account .abas .actived {
+  background-color: #4F46BA;
+  color: white;
+}
 .account .current {
   background-color: #4F46BA;
   text-align: center;

@@ -6,6 +6,25 @@
     &__painel {
         border-top: 5px solid $colorPurple;
     }
+    .abas {
+        height: 100%;
+        &__div {
+            box-shadow: 15px 0px 20px 0px rgba(0,0,0,0.25);
+            background-color: rgba(128, 128, 128, 0.741);
+            height: 100%;
+            width: 80%;
+        }
+        &__aba {
+            width: 100%;
+            height: 55px;
+            border: none;
+            border-bottom: 2px solid rgba(128, 128, 128, 0.741);
+        }
+        .actived {
+            background-color: $colorPurple;
+            color: white;
+        }
+    }
     .current {
         background-color: $colorPurple;
         text-align: center;
