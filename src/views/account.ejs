@@ -1,0 +1,36 @@
+<%- include('includes/header'); %>
+  <header class="header--account">
+    <%- include('includes/navbar'); %>
+  </header>
+  <section class="account">
+    <div class="row account__painel">
+      <div class="col-1"></div>
+      <div class="col-8"></div>
+      <div class="col-3">
+        <div class="current">
+          <div class="current__money">
+            <p>Dinheiro atual:</p>
+            <h2>&pound;0.00</h2>
+          </div>
+          <div class="current__payment">
+            <table>
+              <tr>
+                <th class="current__payment--text">Pagamento:</th>
+                <th class="current__payment--num">&pound;0.00</th>
+              </tr>
+              <tr>
+                <th class="current__payment--text">Dívidas:</th>
+                <th class="current__payment--num">&pound;0.00</th>
+              </tr>
+              <tr>
+                <th class="current__payment--text">Investimentos:</th>
+                <th class="current__payment--num">&pound;0.00</th>
+              </tr>
+            </table>
+          </div>
+          <button class="current__btn" type="button">Fazer pagamento</button>
+        </div>
+      </div>
+    </div>
+  </section>
+<%- include('includes/footer'); %>
