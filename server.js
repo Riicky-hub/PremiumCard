@@ -3,7 +3,7 @@ const express = require('express');
 const app = express();
 const path = require('path');
 const routes = require('./routes');
-const { createCsrf, errorCsrf } = require('./src/middlewares/tokenCSRF');
+const { createCsrf, errorsMid, messages } = require('./src/middlewares/middlewareGlobal');
 const mongoose = require('mongoose');
 mongoose.connect(process.env.CONNECTSTRING, { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => { app.emit('readyMongo'); console.log('Banco de dados conectado') })
@@ -37,7 +37,8 @@ app.set('view engine', 'ejs');
 
 app.use(csrf());
 app.use(createCsrf);
-app.use(errorCsrf);
+app.use(errorsMid);
+app.use(messages);
 app.use(routes);
 
 app.on('readyMongo', () => {
