@@ -2,6 +2,9 @@
     background-color: rgb(201, 231, 242);
 }
 .account {
+    height: 100vh;
+    overflow: hidden;
+    width: 100%;
     background: $whiteBg;
     &__painel {
         border-top: 5px solid $colorPurple;
