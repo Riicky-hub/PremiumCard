@@ -842,7 +842,7 @@ blockquote p span {
 }
 .account .abas__div {
   box-shadow: 15px 0px 20px 0px rgba(0, 0, 0, 0.25);
-  background-color: rgba(128, 128, 128, 0.741);
+  background-color: rgba(179, 179, 179, 0.741);
   height: 100%;
   width: 80%;
 }
@@ -850,11 +850,93 @@ blockquote p span {
   width: 100%;
   height: 55px;
   border: none;
-  border-bottom: 2px solid rgba(128, 128, 128, 0.741);
+  border-bottom: 2px solid rgba(179, 179, 179, 0.741);
 }
 .account .abas .actived {
   background-color: #4F46BA;
   color: white;
+}
+.account .summary {
+  width: 80%;
+}
+.account .summary__header {
+  padding: 20px 0;
+  border-bottom: 2px solid rgba(179, 179, 179, 0.741);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.account .summary__header h2 {
+  margin: 0;
+}
+.account .summary__header h2 span {
+  color: #4F46BA;
+}
+.account .summary__header a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.2rem;
+  transition: all 0.5s ease-in-out;
+}
+.account .summary__header a:hover {
+  color: rgb(62, 62, 62);
+}
+.account .summary__main {
+  padding: 20px 0;
+  border-bottom: 2px solid rgba(179, 179, 179, 0.741);
+}
+.account .summary__main--tables {
+  padding-bottom: 20px;
+  border-bottom: 2px solid rgba(179, 179, 179, 0.741);
+}
+.account .summary__main--tables table {
+  display: inline;
+  padding: 0 30px;
+}
+.account .summary__main--tables table th {
+  padding: 10px 5px;
+}
+.account .summary__main--tables table th:nth-child(2) {
+  font-weight: 700;
+}
+.account .summary__main--tables .tables__links {
+  width: 100%;
+  text-align: right;
+}
+.account .summary__main--tables .tables__links--link {
+  color: black;
+  font-size: 1rem;
+  transition: all 0.5s ease-in-out;
+}
+.account .summary__main--tables .tables__links--link:hover {
+  color: rgb(62, 62, 62);
+}
+.account .summary__main--chaves {
+  padding: 20px 15px 0 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.account .summary__main--chaves h2 {
+  color: #4F46BA;
+  margin: 0;
+}
+.account .summary__main--chaves select {
+  padding: 0 10px;
+  width: 35%;
+  font-size: 1.1rem;
+}
+.account .summary__footer {
+  text-align: center;
+  padding-top: 20px;
+}
+.account .summary__footer a {
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+  transition: all 0.5s ease-in-out;
+}
+.account .summary__footer a:hover {
+  color: rgb(62, 62, 62);
 }
 .account .current {
   background-color: #4F46BA;
@@ -893,6 +975,7 @@ blockquote p span {
   border: none;
   border-radius: 5px;
   transition: all 0.5s ease-in-out;
+  background-color: white;
 }
 .account .current__btn:hover {
   color: rgb(100, 96, 125);
