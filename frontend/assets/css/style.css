@@ -770,23 +770,23 @@ blockquote p span {
   margin-top: 30px;
 }
 
-.account {
+.account--logres {
   height: 100vh;
   overflow: hidden;
   width: 100%;
   background: rgb(19, 19, 19);
 }
-.account .img-div {
+.account--logres .img-div {
   overflow: hidden;
   position: relative;
 }
-.account .img-div img {
+.account--logres .img-div img {
   position: absolute;
   right: -10%;
   height: 100vh;
   object-fit: fill;
 }
-.account .info-div {
+.account--logres .info-div {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -794,20 +794,20 @@ blockquote p span {
   color: white;
   position: relative;
 }
-.account .info-div__home {
+.account--logres .info-div__home {
   color: white;
   font-size: 1.5rem;
   position: absolute;
   right: 30px;
   top: 10px;
 }
-.account .info-div__title span {
+.account--logres .info-div__title span {
   color: #463ea1;
 }
-.account .info-div__p {
+.account--logres .info-div__p {
   text-align: center;
 }
-.account .info-div__p span {
+.account--logres .info-div__p span {
   color: #463ea1;
 }
 
@@ -832,6 +832,9 @@ blockquote p span {
 }
 
 .account {
+  height: 100vh;
+  overflow: hidden;
+  width: 100%;
   background: #FAFBFF;
 }
 .account__painel {
