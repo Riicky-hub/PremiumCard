@@ -22,7 +22,8 @@ _Ilustrações e ícones vem do Icons8 - [Icons8](https://icons8.com/)_
 | ----- | dotenv |
 | ----- | validator |
 
-Template Engine: _**EJS**_;
+Template Engine: _**EJS**_;  
+Banco de dados(NoSQL): _**MongoDB**_;
 
 ### Instalação
 
@@ -36,4 +37,5 @@ _Criar base do site -_ _**Finished**_
 _Outros detalhes -_ _**Finished**_  
 _Responsive -_ _**Finished 90%**_  
 _MVC -_ _**Finished**_  
+_Criptografia de senha -_ _**Finished**_  
 _Animações -_ _**Working**_  
