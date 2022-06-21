@@ -16,11 +16,22 @@ class Account {
     this.errors = [];
     this.user = null;
   }
-
+  async login() {
+    this.cleanUpLogin();
+    this.user = await AccountModel.findOne({ email: this.body.email });
+    if(!this.user) {
+      this.errors.push('O usuário não existe!');
+      return;
+    }
+    if(!bcryptjs.compareSync(this.body.password, this.user.password)) {
+      this.errors.push('Senha está errada!');
+      this.user = null;
+    }
+  }
   async register() {
     this.valid();
     if(this.errors.length > 0) return;
-    await this.userExits();
+    await this.userExists();
     if(this.errors.length > 0) return;
 
     const salt = bcryptjs.genSaltSync();
@@ -61,7 +72,18 @@ class Account {
       confirm: this.body.confirm__register
     }
   }
-  async userExits() {
+  cleanUpLogin() {
+    for (const key in this.body) {
+      if (typeof this.body[key] !== 'string') {
+        this.body[key] = '';
+      }
+    }
+    this.body = {
+      email: this.body.email__login,
+      password: this.body.password__login
+    }
+  }
+  async userExists() {
     const user = await AccountModel.findOne({ email: this.body.email });
     if(user) this.errors.push('Usuário já existe!');
   }

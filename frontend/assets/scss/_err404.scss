@@ -1,0 +1,28 @@
+.err__header {
+    background-color: rgb(201, 231, 242);
+}
+.err {
+    height: 100vh;
+    background-color: rgb(139, 179, 194);
+    border-top: 5px solid $colorPurple;
+    &__text {
+        width: 100%;
+        padding: 20px 0 0 0;
+        text-align: center;
+        &--title {
+            font-size: 3.2rem;
+            span {
+                color: $colorPurple;
+            }
+        }
+        &--p {
+            font-size: 1.4rem;
+        }
+    }
+    &__img {
+        width: 100%;
+        background-color: rgb(139, 179, 194);
+        display: flex;
+        justify-content: center;
+    }
+}

@@ -1,4 +1,4 @@
-<%- include('includes/header') %> 
+<%- include('includes/header'); %> 
 <div class="account--logres">
     <div class="row">
         <div class="col-6 img-div">
@@ -8,15 +8,16 @@
             <a href="/" class="info-div__home"><i class="fa-solid fa-house"></i></a>
             <h2 class="info-div__title"><span>Premium</span>Card</h2>
             <p class="info-div__p">Junte-se aos <span>milhões de investidores</span><br> e faça parte dessa <span>grande comunidade!</span></p>
+            <%- include('includes/messages'); %>
             <form class="form__login" action="/login" method="POST">
                 <input type="hidden" name="_csrf" value="<%= csrfToken %>">
                 <div class="mb-3">
                     <label for="form__login--email" class="form-label">E-mail:</label>
-                    <input type="email" class="form-control" id="form__login--email" required>
+                    <input name="email__login" type="email" class="form-control" id="form__login--email" required>
                   </div>
                   <div class="mb-3">
                     <label for="form__login--password" class="form-label">Senha:</label>
-                    <input type="password" class="form-control" id="form__login--password" aria-describedby="senha-disc" required>
+                    <input name="password__login" type="password" class="form-control" id="form__login--password" aria-describedby="senha-disc" required>
                     <div id="senha-disc" class="form-text">Caso não tenha uma conta, <a href="/register">crie sua conta agora</a> e garanta seu cartão</div>
                   </div>
                   <button type="submit" class="btn btn-primary">Entrar</button>
@@ -24,4 +25,4 @@
         </div>
     </div>
 </div>
-<%- include('includes/footer') %> 
+<%- include('includes/footer'); %> 
