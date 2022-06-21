@@ -17,9 +17,12 @@ _Ilustrações e ícones vem do Icons8 - [Icons8](https://icons8.com/)_
 | Nodemon | Express |
 | css-loader | Mongoose |
 | style-loader | helmet |
+| SASS | bcryptjs |
 | ----- | csurf |
+| ----- | dotenv |
+| ----- | validator |
 
-Template Engine: _**ejs**_;
+Template Engine: _**EJS**_;
 
 ### Instalação
 
@@ -31,6 +34,6 @@ npm install
 
 _Criar base do site -_ _**Finished**_  
 _Outros detalhes -_ _**Finished**_  
-_Responsive -_ _**Finished**_  
-_MVC -_ _**Working**_  
+_Responsive -_ _**Finished 90%**_  
+_MVC -_ _**Finished**_  
 _Animações -_ _**Working**_  
