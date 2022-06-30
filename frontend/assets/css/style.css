@@ -270,26 +270,41 @@ blockquote p span {
   }
 }
 .companies {
-  height: 190px;
   width: 100%;
   background-color: #F5F6F8;
 }
 .companies__title {
   text-align: center;
-  padding: 30px 0;
+  padding: 30px 0 0 0;
   color: black;
   font-size: 1.2rem;
 }
 
+.slider {
+  height: 100px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: auto;
+}
 .slider__track {
+  animation: roll 30s linear infinite;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  width: 2520px;
 }
 .slider__track--item {
-  margin: 0 10px;
+  height: 100px;
+  width: 180px;
 }
 
+@keyframes roll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-1260px);
+  }
+}
 .beneficios {
   background-color: #FAFBFF;
   padding: 50px 0;
@@ -833,12 +848,15 @@ blockquote p span {
 
 .account {
   height: 100vh;
-  overflow: hidden;
   width: 100%;
   background: #FAFBFF;
 }
 .account__painel {
   border-top: 5px solid #4F46BA;
+  margin: 0;
+}
+.account .col__abas {
+  padding-left: 0;
 }
 .account .abas {
   height: 100%;
@@ -984,6 +1002,32 @@ blockquote p span {
   color: rgb(100, 96, 125);
 }
 
+@media only screen and (max-width: 991px) {
+  .col__abas {
+    display: none;
+    padding: 0;
+  }
+  .col__summary {
+    padding: 10px 80px;
+  }
+  .summary {
+    width: 100% !important;
+  }
+  .summary__footer {
+    display: none;
+  }
+  .current {
+    padding: 15px 80px !important;
+  }
+}
+@media only screen and (max-width: 635px) {
+  .col__summary {
+    padding: 10px 15px !important;
+  }
+  .current {
+    padding: 15px 15px !important;
+  }
+}
 .err__header {
   background-color: rgb(201, 231, 242);
 }

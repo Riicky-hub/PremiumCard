@@ -12,6 +12,9 @@ exports.accountIndex = (req, res) => {
     res.render('account');
 }
 
+exports.accountConfigIndex = (req, res) => {
+    res.render('accountConfig');
+}
 exports.register = async (req, res) => {
     try {
         const account = new Account(req.body);

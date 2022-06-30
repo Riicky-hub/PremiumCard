@@ -3,11 +3,14 @@
 }
 .account {
     height: 100vh;
-    overflow: hidden;
     width: 100%;
     background: $whiteBg;
     &__painel {
         border-top: 5px solid $colorPurple;
+        margin: 0;
+    }
+    .col__abas {
+        padding-left: 0;
     }
     .abas {
         height: 100%;
@@ -153,5 +156,31 @@
                 color: $colorPurpleAlt;
             }
         }
+    }
+}
+@media only screen and (max-width: 991px) {
+    .col__abas {
+        display: none;
+        padding: 0;
+    }
+    .col__summary {
+        padding: 10px 80px;
+    }
+    .summary {
+        width: 100% !important;
+        &__footer {
+            display: none;
+        }
+    }
+    .current {
+        padding: 15px 80px !important;
+    }
+}
+@media only screen and (max-width: 635px) {
+    .col__summary {
+        padding: 10px 15px !important;
+    }
+    .current {
+        padding: 15px 15px !important;
     }
 }
