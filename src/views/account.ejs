@@ -4,28 +4,23 @@
   </header>
   <section class="account">
     <div class="row account__painel">
-      <div class="col-1">
+      <div class="col-lg-1 col__abas">
         <div class="abas">
           <div class="abas__div">
-            <button class="abas__aba actived">
-              <i class="fa-solid fa-desktop"></i>
-            </button>
-            <button class="abas__aba">
-              <i class="fa-solid fa-arrow-right-arrow-left"></i>
-            </button>
-            <button class="abas__aba">
-              <i class="fa-solid fa-credit-card"></i>
-            </button>
-            <button class="abas__aba">
-              <i class="fa-solid fa-file-lines"></i>
-            </button>
-            <button class="abas__aba">
-              <i class="fa-solid fa-gear"></i>
-            </button>
+            <a href="/account">
+              <button class="abas__aba actived">
+                <i class="fa-solid fa-desktop"></i>
+              </button>
+            </a>
+            <a href="/accountConfig">
+              <button class="abas__aba">
+                <i class="fa-solid fa-gear"></i>
+              </button>
+            </a>
           </div>
         </div>
       </div>
-      <div class="col-8">
+      <div class="col-lg-8 col__summary">
         <div class="summary">
           <div class="summary__header">
             <h2>Bem-vindo <span><%= user.user %></span></h2>
@@ -88,7 +83,7 @@
           </div>
         </div>
       </div>
-      <div class="col-3">
+      <div class="col-lg-3">
         <div class="current">
           <div class="current__money">
             <p>Dinheiro atual:</p>

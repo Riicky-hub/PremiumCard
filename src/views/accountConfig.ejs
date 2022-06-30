@@ -1,0 +1,45 @@
+<%- include('includes/header'); %>
+  <header class="header--account">
+    <%- include('includes/navbar'); %>
+  </header>
+  <section class="account">
+    <div class="row account__painel">
+      <div class="col-1 col__abas">
+        <div class="abas">
+          <div class="abas__div">
+            <a href="/account">
+              <button class="abas__aba">
+                <i class="fa-solid fa-desktop"></i>
+              </button>
+            </a>
+            <a href="/accountConfig">
+              <button class="abas__aba actived">
+                <i class="fa-solid fa-gear"></i>
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-11">
+        <div class="accountConfig m-3">
+          <form class="accountConfig" action="/accountConfig" method="POST">
+            <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+            <div class="mb-3">
+              <h2 class="mb-3">Mudar username</h2>
+              <label for="accountConfig--username" class="form-label">Novo username:</label>
+              <input name="user__register" type="text" class="form-control" id="accountConfig--username" max="15" min="3">
+            </div>
+            <div class="mb-3">
+              <h2 class="mb-3">Mudar senha</h2>
+              <label for="accountConfig--password" class="form-label">Senha atual:</label>
+              <input name="password__register" type="password" class="form-control mb-3" id="accountConfig--password">
+              <label for="accountConfig--confirm" class="form-label">Senha nova:</label>
+              <input name="confirm__register" type="password" class="form-control mb-3" id="accountConfig--confirm">
+            </div>
+            <button type="submit" class="btn btn-primary">Atualizar conta</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+<%- include('includes/footer'); %>
