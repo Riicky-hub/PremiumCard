@@ -16,6 +16,13 @@ class Account {
     this.errors = [];
     this.user = null;
   }
+  // async edit(id) {
+  //   if(typeof id !== 'string') return;
+  //   this.user = await AccountModel.findById(id);
+  //   this.validEdit();
+  //   if(this.errors.length > 0) return;
+  //   this.user = await ContatoModel.findByIdAndUpdate(id, this.body, { new: true });
+  // } 
   async login() {
     this.cleanUpLogin();
     this.user = await AccountModel.findOne({ email: this.body.email });
@@ -59,6 +66,14 @@ class Account {
       this.errors.push('Por favor confirme a mesma senha');
     }
   }
+  // validEdit() {
+  //   this.cleanUpUpdate();
+  //   const regName = /^[a-zA-Z]*$/;
+  //   if(!regName.test(this.body.user)) this.errors.push('Por favor coloque um nome válido');
+  //   if(!validator.isEmail(this.body.email)) this.errors.push('E-mail inválido');
+  //   if(!bcryptjs.compareSync(this.body.password, this.user.password)) this.errors.push('Senha está errada!');
+
+  // }
   cleanUp() {
     for (const key in this.body) {
       if (typeof this.body[key] !== 'string') {
@@ -83,6 +98,19 @@ class Account {
       password: this.body.password__login
     }
   }
+  // cleanUpUpdate() {
+  //   for(const key in this.body) {
+  //     if(typeof this.body[key] !== 'string') {
+  //       this.body[key] = '';
+  //     }
+  //   }
+  //   this.body = {
+  //     user: this.body.user__auth,
+  //     email: this.body.email__auth,
+  //     password: this.body.password__auth,
+  //     new: this.body.new__auth
+  //   }
+  // }
   async userExists() {
     const user = await AccountModel.findOne({ email: this.body.email });
     if(user) this.errors.push('Usuário já existe!');

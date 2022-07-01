@@ -1,6 +1,6 @@
 {
   "name": "premiumcard",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "Site de cartão de crédito e débito",
   "main": "server.js",
   "scripts": {

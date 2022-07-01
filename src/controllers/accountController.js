@@ -28,9 +28,9 @@ exports.register = async (req, res) => {
             return;
         }
 
-        req.flash('success', 'Sua conta foi criada com sucesso!');
+        req.flash('success', 'Conta criada, login agora está disponivel!');
         req.session.save(() => {
-            return res.redirect('back');
+            return res.redirect('/login');
         });
     } catch(e) {
         console.log(e);
@@ -52,13 +52,43 @@ exports.login = async (req, res) => {
 
         req.session.user = account.user;
         req.session.save(() => {
-            return res.redirect('/');
+            return res.redirect(`/account/${account.user._id}`);
         });
     } catch(e) {
         console.log(e);
         res.render('404');
     }
 }
+exports.temp = (req, res) => {
+    req.flash('errors', 'Função indisponivel por motivos de segurança, em breve será implementado essa função');
+    req.session.save(() => {
+        res.redirect('back');
+        return;
+    });
+}
+// exports.accountConfigEdit = async (req, res) => {
+//     try {
+//         if(!req.params.id) return res.render('404');
+//         const account = new Account(req.body);
+//         await account.edit(req.params.id);
+
+//         if(account.errors.length > 0) {
+//             req.flash('errors', account.errors);
+//             req.session.save(() => {
+//                 res.redirect('back');
+//                 return
+//             })
+//             return
+//         }
+//         req.flash('success', 'Sua conta foi editada com sucesso!');
+//         req.session.save(() => {
+//             res.redirect('back');
+//         });
+//         return;
+//     } catch(e) {
+//         console.error(e);
+//     }
+// }
 exports.logout = (req, res) => {
     req.session.destroy();
     res.redirect('/');

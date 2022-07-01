@@ -26,6 +26,7 @@ const sessionOptions = session({
 });
 
 app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
 app.use(express.static(path.resolve(__dirname, 'frontend')));
 
 app.use(sessionOptions);

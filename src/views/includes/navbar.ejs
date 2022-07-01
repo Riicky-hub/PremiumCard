@@ -51,8 +51,8 @@
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
               aria-expanded="false">Conta</a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="/account">Conta</a></li>
-              <li><a class="dropdown-item" href="/accountConfig">Configurações</a></li>
+              <li><a class="dropdown-item" href="/account/<%= user._id %>">Conta</a></li>
+              <li><a class="dropdown-item" href="/accountConfig/<%= user._id %>">Configurações</a></li>
               <li>
                 <hr class="dropdown-divider">
               </li>
@@ -67,7 +67,7 @@
           <a class="nav-link" href="/logout">Sair</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" id="navbar__login--regis" href="/account">Conta<i
+          <a class="nav-link" id="navbar__login--regis" href="/account/<%= user._id %>">Conta<i
               class="fa-solid fa-circle-user"></i></a>
         </li>
         <% } %>
