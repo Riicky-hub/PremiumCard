@@ -2,10 +2,24 @@
 ## LiveServer(Heroku)
 Link para acessar o site - [PremiumCard](https://premiumcard.herokuapp.com/)
 
+## Overview
+Trabalhei neste projeto por 1 mês, estudando tecnologias como:
+
+- Nodejs
+- Express
+- MongoDB
+
+![](./frontend/assets/img/readmePics/PCHome.gif)
+
+Além do seu design fiel ao projeto original 
+seu sistema de autenticação e criptografia funcionam perfeitamente juntos
+
+![](./frontend/assets/img/readmePics/PCLogin.png)
+
 ## Referências
 
 _Fontes do Google Fonts - [GoogleFonts](https://fonts.google.com/)_  
-_Baseado em design do Figma -  [AR Shakir](https://www.figma.com/file/ABNkLGrjge6LUVLdGKx6bM/Landing-Page-%234-(Community)?node-id=0%3A41)._  
+_Baseado em design do Figma -  [AR Shakir](https://www.figma.com/community/file/1090107663004539834)._  
 _Ilustrações e ícones vem do Icons8 - [Icons8](https://icons8.com/)_
 
 ## Developer area
