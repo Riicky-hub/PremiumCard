@@ -32,7 +32,7 @@ app.use(express.static(path.resolve(__dirname, 'frontend')));
 
 app.use(sessionOptions);
 app.use(flash());
-// app.use(helmet());
+app.use(helmet());
 
 app.set('views', path.resolve(__dirname, 'src', 'views'));
 app.set('view engine', 'ejs');
