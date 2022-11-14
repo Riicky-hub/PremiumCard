@@ -3,7 +3,18 @@
 Link para acessar o site - [PremiumCard](https://premiumcard.herokuapp.com/)
 
 ## Overview
+Trabalhei neste projeto por 1 mês, estudando tecnologias como:
+
+- Nodejs
+- Express
+- MongoDB
+
 ![](./frontend/assets/img/readmePics/PCHome.gif)
+
+Além do seu design fiel ao projeto original 
+seu sistema de autenticação e criptografia funcionam perfeitamente juntos
+
+![](./frontend/assets/img/readmePics/PCLogin.png)
 
 ## Referências
 
