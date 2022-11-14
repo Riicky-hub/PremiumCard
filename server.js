@@ -13,6 +13,7 @@ const flash = require('connect-flash');
 const session = require('express-session');
 const helmet = require('helmet');
 const csrf = require('csurf');
+const port = process.env.PORT || 3000;
 
 const sessionOptions = session({
     secret: 'Mensagem secreta. :)',
@@ -43,8 +44,8 @@ app.use(messages);
 app.use(routes);
 
 app.on('readyMongo', () => {
-    app.listen(3000, () => {
-        console.log('Acesse: http://localhost:3000');
+    app.listen(port, () => {
+        console.log(`Acesse: http://localhost:${port}`);
     })
 });
 

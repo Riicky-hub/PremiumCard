@@ -4,7 +4,7 @@
   "description": "Site de cartão de crédito e débito",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon server.js",
+    "start": "node server.js",
     "dev": "webpack -w",
     "sass": "sass ./frontend/assets/scss/style.scss ./frontend/assets/css/style.css --watch"
   },
