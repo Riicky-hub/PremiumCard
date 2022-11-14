@@ -1,6 +1,6 @@
 # README
-## LiveServer(GitHub Pages)
-Link para acessar o site - [comming soon](https://github.com/Riicky-hub)
+## LiveServer(Heroku)
+Link para acessar o site - [PremiumCard](https://premiumcard.herokuapp.com/)
 
 ## Referências
 
@@ -38,4 +38,4 @@ _Outros detalhes -_ _**Finished**_
 _Responsive -_ _**Finished**_  
 _MVC -_ _**Finished**_  
 _Criptografia de senha -_ _**Finished**_  
-_Animações -_ _**Working**_  
+_Animações -_ _**Finished**_  
