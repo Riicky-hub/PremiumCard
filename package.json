@@ -4,6 +4,7 @@
   "description": "Site de cartão de crédito e débito",
   "main": "index.js",
   "scripts": {
+    "start": "nodemon server.js",
     "webp": "webpack -w",
     "sass": "sass ./src/assets/scss/style.scss ./src/assets/css/style.css --watch"
   },
@@ -11,6 +12,10 @@
   "author": "Riicky_hub",
   "license": "ISC",
   "dependencies": {
-    "bootstrap": "^5.1.3"
+    "bootstrap": "^5.1.3",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
   }
 }
