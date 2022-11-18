@@ -16,5 +16,6 @@ route.get('/accountConfig', (req, res) => { res.render('404') });
 route.get('/accountConfig/:id', userNotExists, accountController.accountConfigIndex);
 route.post('/accountConfig', userNotExists, accountController.temp);
 route.get('/logout', accountController.logout);
+route.get('*', (req, res) => { res.render('404') });
 
 module.exports = route;

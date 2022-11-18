@@ -13,7 +13,7 @@ const flash = require('connect-flash');
 const session = require('express-session');
 const helmet = require('helmet');
 const csrf = require('csurf');
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 5000;
 
 const sessionOptions = session({
     secret: 'Mensagem secreta. :)',
