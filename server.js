@@ -5,8 +5,12 @@ const path = require('path');
 const routes = require('./routes');
 const { createCsrf, errorsMid, messages } = require('./src/middlewares/middlewareGlobal');
 const mongoose = require('mongoose');
-mongoose.connect(process.env.CONNECTSTRING, { useNewUrlParser: true, useUnifiedTopology: true })
-    .then(() => { app.emit('readyMongo'); console.log('Banco de dados conectado') })
+const dbUser = process.env.DB_USER;
+const dbPassword = process.env.DB_PASSWORD;
+const dbCluster = process.env.DB_CLUSTER;
+const connectString = `mongodb+srv://${dbUser}:${dbPassword}@mainserver.8crzy.mongodb.net/${dbCluster}?retryWrites=true&w=majority`
+mongoose.connect(connectString, { useNewUrlParser: true, useUnifiedTopology: true })
+    .then(() => { app.emit('readyMongo'); console.log('Banco de dados conectado'); })
     .catch(e => console.log(e));
 const MongoStore = require('connect-mongo');
 const flash = require('connect-flash');
@@ -17,7 +21,7 @@ const port = process.env.PORT || 5000;
 
 const sessionOptions = session({
     secret: 'Mensagem secreta. :)',
-    store: MongoStore.create({ mongoUrl: process.env.CONNECTSTRING }),
+    store: MongoStore.create({ mongoUrl: connectString }),
     resave: false,
     saveUninitialized: false,
     cookie: {
@@ -46,6 +50,6 @@ app.use(routes);
 app.on('readyMongo', () => {
     app.listen(port, () => {
         console.log(`Acesse: http://localhost:${port}`);
-    })
+    });
 });
 
