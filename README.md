@@ -19,7 +19,7 @@ seu sistema de autenticação e criptografia funcionam perfeitamente juntos
 ## Referências
 
 _Fontes do Google Fonts - [GoogleFonts](https://fonts.google.com/)_  
-_Baseado em design do Figma -  [AR Shakir](https://www.figma.com/community/file/1090107663004539834)._  
+_Baseado em design do Figma -  [AR Shakir](https://www.arshakir.com/project/saas-landing-page-freebie-4)._  
 _Ilustrações e ícones vem do Icons8 - [Icons8](https://icons8.com/)_
 
 ## Developer area
