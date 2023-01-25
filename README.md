@@ -1,6 +1,6 @@
 # README
 ## LiveServer(Heroku)
-Link para acessar o site - [PremiumCard](https://premiumcard.herokuapp.com/)
+Link para acessar o site - [PremiumCard](https://premiumcard.onrender.com/)
 
 ## Overview
 Trabalhei neste projeto por 1 mês, estudando tecnologias como:
