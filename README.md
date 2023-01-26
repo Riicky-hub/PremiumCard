@@ -1,6 +1,6 @@
 # README
-## LiveServer(Heroku)
-Link para acessar o site - [PremiumCard](https://premiumcard.onrender.com/)
+## LiveServer(Railway)
+Link para acessar o site - [PremiumCard](https://premiumcard.up.railway.app/)
 
 ## Overview
 Trabalhei neste projeto por 1 mês, estudando tecnologias como:
